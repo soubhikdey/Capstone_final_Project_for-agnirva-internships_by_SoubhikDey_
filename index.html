@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Event Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Cosmic Event Calendar</h1>
+    </header>
+
+    <main class="container">
+        <section class="calendar-section">
+            <div class="calendar-header">
+                <button id="prevMonth">&lt;</button>
+                <h2 id="monthYear"></h2>
+                <select id="yearSelect"></select> <button id="nextMonth">&gt;</button>
+            </div>
+            <div class="calendar-grid">
+                <div class="day-name">Sun</div>
+                <div class="day-name">Mon</div>
+                <div class="day-name">Tue</div>
+                <div class="day-name">Wed</div>
+                <div class="day-name">Thu</div>
+                <div class="day-name">Fri</div>
+                <div class="day-name">Sat</div>
+            </div>
+        </section>
+
+       <section class="image-display-section">
+            <div id="imageContainer">
+                <h3 id="imageTitle"></h3> <img id="epicImage" src="https://placehold.co/600x400/000000/FFFFFF?text=Select+a+Date" alt="NASA EPIC Satellite Image">
+                <p id="imageDescription">Select a date on the calendar to view a satellite snapshot of Earth and its description.</p>
+                <p class="image-credit" id="imageCredit"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Data provided by <a href="https://epic.gsfc.nasa.gov/" target="_blank" rel="noopener">NASA EPIC API</a></p>
+    </footer>
+    <footer>
+        <p>created by SOUBHIK DEY with ❤️</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
